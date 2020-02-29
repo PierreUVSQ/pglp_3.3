@@ -63,7 +63,7 @@ public class AppTest
     	catch(UnsupportedOperationException ue) {
     		
     	}
-    	List <Robot> l = e.getList();
+    	List <RobotAbstract> l = e.getList();
     	assertEquals(0, l.get(0).getx(), 0);
     	assertEquals(1, l.get(0).gety(), 0);
     	

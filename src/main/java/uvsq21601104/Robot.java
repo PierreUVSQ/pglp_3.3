@@ -40,26 +40,6 @@ public class Robot extends RobotAbstract {
 		
 	}
 	
-	public int getx() {
-		
-		int res = this.position.x;
-		return res;
-		
-	}
-	
-	public int gety() {
-		
-		int res = this.position.y;
-		return res;
-		
-	}
-	
-	public Direction getd() {
-		
-		Direction res = this.direction;
-		return res;
-		
-		
-	}
+
 	
 }
