@@ -4,17 +4,17 @@ import java.util.*;
 
 public class Environement {
 
-	List<Robot> l;
+	List<RobotAbstract> l;
 	
 	public Environement() {
 		
-		l = new ArrayList<Robot>();
+		l = new ArrayList<RobotAbstract>();
 	
 	}
 	
 	public void avanceTous() {
 		
-		for(Robot r : l) {
+		for(RobotAbstract r : l) {
 			
 			r.avance();
 			
@@ -24,13 +24,13 @@ public class Environement {
 	}
 	
 	
-	public void addRobot(Robot r) {
+	public void addRobot(RobotAbstract r) {
 		
 		this.l.add(r);
 		
 	}
 	
-	public List<Robot> getList() {
+	public List<RobotAbstract> getList() {
 		
 		return Collections.unmodifiableList(l);
 		

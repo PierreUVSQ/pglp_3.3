@@ -1,28 +1,12 @@
 package uvsq21601104;
 
-class Position {
-	int x;
-	int y;
-	public Position(int x, int y) {
-		
-		this.x = x;
-		this.y = y;
-		
-	}
-	
-}
 
 
-public class Robot {
-	
-	private Position position ;
-	private Direction direction ;
-	
+public class Robot extends RobotAbstract {
 	
 	public Robot( ) {
 		
-		direction = Direction.Nord;
-		position = new Position(0, 0); 
+		super();
 	}
 
 	public void tourne() {
@@ -41,7 +25,7 @@ public class Robot {
 	}
 	
 	
-	
+	@Override
 	public void avance () {
 		
 		switch (this.direction) {

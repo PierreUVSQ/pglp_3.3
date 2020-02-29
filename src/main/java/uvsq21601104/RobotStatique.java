@@ -1,6 +1,6 @@
 package uvsq21601104;
 
-public class RobotStatique extends Robot  {
+public class RobotStatique extends RobotAbstract  {
 
 	public RobotStatique() {
 		
@@ -8,8 +8,6 @@ public class RobotStatique extends Robot  {
 		
 		
 	}
-	
-	
 	
 	@Override
 	public void avance() {
